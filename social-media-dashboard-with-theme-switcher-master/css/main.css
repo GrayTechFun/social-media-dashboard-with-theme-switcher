@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  margin: 2em 0;
+}
+
+header {
+  margin: 0 8em;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard p {
+  color: gray;
+}
+
+.dashboard {
+  padding-bottom: 1em;
+  border-bottom: 1px solid gray;
+}
+
+.dark-mode {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+label {
+  width: 5em;
+  height: 2em;
+  position: relative;
+  display: block;
+  background-color: #9fa4bf;
+  border-radius: 20em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+label:after {
+  content: "";
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 1px;
+  left: 30px;
+  background-color: white;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label {
+  background-color: #242424;
+}
+
+input:checked + label:after {
+  left: 20px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.dark-mode h3 {
+  color: gray;
+}
+
+.fb {
+  margin: 1em 2em;
+  width: 30em;
+  height: 17em;
+  background-color: #edf0f9;
+  text-align: center;
+  border-radius: 3px;
+  border-top: 2px solid #0071cc;
+  padding-top: 2em;
+}
+
+.at {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.total h1 {
+  font-size: 3rem;
+  margin: 0.2em 0;
+}
+
+.gray {
+  color: gray;
+  margin-bottom: 2em;
+}
+
+.index p {
+  color: #64b39d;
+  font-weight: 700;
+}
+
+.red {
+  color: red;
+}
+
+.yt .index p {
+  color: red;
+}
+
+.ig {
+  border-color: pink;
+}
+
+.yt {
+  border-color: red;
+}
+
+.overview h1 {
+  margin: 1em 0;
+  margin-left: -9em;
+  color: gray;
+}
+
+.rect {
+  margin: 1em 2em;
+  width: 30em;
+  height: 8em;
+  background-color: #edf0f9;
+  border-radius: 3px;
+  padding-top: 2em;
+  padding: 2em;
+}
+
+.top-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.top-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.bottom-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.green {
+  color: #64b39d;
+}
